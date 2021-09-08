@@ -1,4 +1,9 @@
-package com.example.Controle.Spring;
+package com.example.Controle.Spring.repository;
 
-public class JornadaRepository {
+import com.example.Controle.Spring.model.JornadaTrabalho;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface JornadaRepository extends JpaRepository<JornadaTrabalho, Long> {
 }
